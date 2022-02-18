@@ -4,3 +4,126 @@
 
 
 
+* {
+    margin:0;
+    padding:0;
+}
+
+/* .ButtonCustom custom ================================================================*/
+.ButtonCustom {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+   .ButtonCustom:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+   .ButtonCustom:active {
+    transform: translateY(-1px);
+   }
+
+/* ================================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    position:relative;
+}
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(2, 2, 2, 0.952);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 25s;
+}
+
+/* animação background */
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 3.5rem;  /* não use pixel por questões de acessibilidade, use rem */
+    font-family: "Baloo Da 2", serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.404);
+    line-height: 3.5rem;
+    opacity: 0;
+    animation: moveBanner 0.5s forwards;
+    
+}   
+
+
+.banner p {
+    font-family: "Josefin Slab", serif;
+    font-size: 2rem;
+    color: white;
+    text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.404);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    animation: moveBanner 0.7s forwards;
+
+}
+.banner #button-banner{
+    animation: moveBanner 1s forwards;
+}
+
+
+
+@keyframes moveBanner {
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform:translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
