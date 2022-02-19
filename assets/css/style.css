@@ -3,7 +3,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
 
 
-
+/* variedades =============================== */
 * {
     margin:0;
     padding:0;
@@ -32,12 +32,19 @@
     cursor: pointer;
 }
 
-.line {
+.line {                               /*  linhas do hamburguer */
     width: 100%;
     height: .1rem;
     background-color:white;
-    box-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.699)
+    transition: transform 1s;
+    
 }
+
+/* ============================================== */
+
+
+
+
 
 /* .ButtonCustom custom ===============================================*/
 .ButtonCustom {
@@ -67,7 +74,7 @@
     transform: translateY(-1px);
    }
 
-/* ================================================================= */
+/* ========================================================= */
 
 
 
@@ -78,7 +85,7 @@
 
 
 
-
+/* header ================================================== */
 
 header{
     width:100%;
@@ -147,7 +154,7 @@ header{
 }
 
 
-
+/* animação dos componentes do banner */
 @keyframes moveBanner {
     0%{
         transform: translateY(10rem) rotateY(-30deg);
@@ -157,7 +164,30 @@ header{
         opacity: 1;
     }
 }
+/* =========================================================== */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animação sidebar - menu ==================================== */
 .sidebar{
     width: 20rem;
     height:100vh;
@@ -167,18 +197,73 @@ header{
     right: -20rem;
     transition: all 1s;
     
+    
 }
 
-.sidebar.show-menu {
+.show-menu .sidebar {
     right:0;
 }
+
+
+
 .menu {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    text-transform: uppercase;
 }
+
+
+
+.hamburguer span{
+    position: absolute;
+    right: 50px;
+    width: 5rem;
+    height:2rem;
+    padding:0.4rem;
+    background-color: rgb(221, 220, 220);
+    text-align: center;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    border-radius: 18px;
+    opacity: 0;
+}
+
+.hamburguer span::before {
+    content: " ";
+    position: absolute;
+    border-right: .5rem solid transparent;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid rgb(221, 220, 220);
+    border-bottom: .5rem solid transparent;
+    left: 5.7rem;
+    bottom: .9rem;
+}
+
+
+/* animação das linhas do menu */
+.show-menu .hamburguer:hover span {
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+.show-menu #line2 {
+    transform:translate(-2px, -15px);
+   background-color: rgba(255, 255, 255, 0.418)
+}
+
+.show-menu #line1 {
+    transform: rotate(45deg) translate(.3rem, .44rem);
+}
+.show-menu #line3 {
+    transform: rotate(-45deg) translate(.3rem, -.44rem);
+}
+
+
+
+
 
 .menu-link{
     font-family: var(--font-tertiary);
@@ -187,12 +272,15 @@ header{
     transition:color 1s;
 }
 .menu-link:hover{
-    color: red;
+    color: rgb(255, 254, 254);
 }
 
 .menu-item {
     margin: 1.5em;
 }
+
+
+
 
 .social-media {
     position: absolute;
@@ -213,5 +301,8 @@ header{
 }
 
 .social-media i:hover{
-    color:red;
+    color:rgb(255, 255, 255);
 }
+
+
+/* ================================================== */
