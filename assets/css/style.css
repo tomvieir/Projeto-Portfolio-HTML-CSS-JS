@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
 
@@ -7,9 +7,39 @@
 * {
     margin:0;
     padding:0;
+    list-style: none;
+    text-decoration: none;
 }
 
-/* .ButtonCustom custom ================================================================*/
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secondary: "Josefin Slab", serif;
+    --font-tertiary: 'JetBrains Mono', monospace;
+
+    --font-action: "Mulish", serif;
+}
+.hamburguer{
+    background-color:rgba(255, 0, 0, 0);
+    width:2rem;
+    height:2rem;
+    position:fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: .1rem;
+    background-color:white;
+    box-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.699)
+}
+
+/* .ButtonCustom custom ===============================================*/
 .ButtonCustom {
     padding: 1.3em 3em;
     font-size: 12px;
@@ -91,7 +121,7 @@ header{
 .banner h1 {
     color: white;
     font-size: 3.5rem;  /* não use pixel por questões de acessibilidade, use rem */
-    font-family: "Baloo Da 2", serif;
+    font-family: var(--font-tertiary);
     font-weight: 300;
     text-transform: uppercase;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.404);
@@ -103,7 +133,7 @@ header{
 
 
 .banner p {
-    font-family: "Josefin Slab", serif;
+    font-family: var(--font-tertiary);
     font-size: 2rem;
     color: white;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.404);
@@ -126,4 +156,62 @@ header{
         transform:translateY(0) rotateY(0);
         opacity: 1;
     }
+}
+
+.sidebar{
+    width: 20rem;
+    height:100vh;
+    background-color:rgb(182, 181, 181);
+    position: fixed;
+    top:0;
+    right: -20rem;
+    transition: all 1s;
+    
+}
+
+.sidebar.show-menu {
+    right:0;
+}
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu-link{
+    font-family: var(--font-tertiary);
+    font-size: 2rem;
+    color: rgba(13, 14, 13, 0.801);
+    transition:color 1s;
+}
+.menu-link:hover{
+    color: red;
+}
+
+.menu-item {
+    margin: 1.5em;
+}
+
+.social-media {
+    position: absolute;
+    bottom:2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.social-media i{
+    background-color:rgba(0, 0, 0, 0);
+    color:black;
+    height:2.5rem;
+    font-size: 2rem;
+    transition: color 1s;
+}
+
+.social-media i:hover{
+    color:red;
 }
