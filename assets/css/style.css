@@ -195,7 +195,7 @@ header{
     position: fixed;
     top:0;
     right: -20rem;
-    transition: all 1s;
+    transition: all 0.4s;
     
     
 }
@@ -240,14 +240,24 @@ header{
     border-bottom: .5rem solid transparent;
     left: 5.7rem;
     bottom: .9rem;
+    
 }
 
 
-/* animação das linhas do menu */
+/* conserto temporário do span */
+@media (min-width: 769px ){ 
+
 .show-menu .hamburguer:hover span {
     opacity: 1;
     transition-delay: 1s;
+    
 }
+
+
+}
+
+/* animação das linhas do menu */
+
 
 .show-menu #line2 {
     transform:translate(-2px, -15px);
