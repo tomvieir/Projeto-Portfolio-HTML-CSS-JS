@@ -378,8 +378,8 @@ header{
 .conhecimentos {
     display:grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 4rem);
-    row-gap: 6rem ;
+    grid-template-rows: repeat(6, 5.8rem);
+    row-gap: 5rem ;
 }
 
 .conhecimento:nth-child(1) {
@@ -410,17 +410,17 @@ header{
 
 
 /* tirar ao aplicar responsivo para nao bugar */
-/* .imagemFundo {
+.imagemFundo {
     grid-column: 7/ 11;     
     grid-row: 3 / 6;
-    font-size: 19rem;
+    font-size: 20vw;
     text-align: center;
-} */
+}
 
 
 
 .sessao-conhecimentos {
-    height:100vh;
+    
     background-color: rgb(221, 221, 221)
 }
 
@@ -429,6 +429,7 @@ header{
     flex-direction: column;
     text-align: center;
     font-family: var(--font-tertiary);
+    font-size: 1.1vh;
     
     
 }
