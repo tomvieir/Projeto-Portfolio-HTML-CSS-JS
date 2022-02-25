@@ -773,3 +773,40 @@ form button {
     max-width: 24rem;
     max-height: 4rem;
 }
+
+
+
+
+
+
+
+
+/* media */
+
+@media (max-width: 580px) {
+    .field{
+        background:transparent;
+        border:none;
+        border-bottom: 2px dashed grey;
+        width:10rem; 
+        font-size: 1rem;
+        font-family: var(--font-tertiary);
+        outline:none;
+        margin:2rem;
+    }
+    .contact-left {
+        display: none;
+    }
+   .contact-right {
+   position:relative;
+   transform:translateX(-4%);
+    
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+    border-radius: inherit;
+}
+
+    .conhecimentos {
+        row-gap: none;
+    }
+}

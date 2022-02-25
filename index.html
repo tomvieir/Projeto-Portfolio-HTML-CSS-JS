@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt=BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,10 +42,10 @@
             <nav>
                 <ul class="menu">
                     <li id="menu-1" class="menu-item"><a href="#" class="menu-link">home</a></li>
-                    <li id="menu-2" class="menu-item"><a href="#" class="menu-link">conhecimentos</a></li>
-                    <li id="menu-3" class="menu-item"><a href="#" class="menu-link">projetos</a></li>
-                    <li id="menu-4" class="menu-item"><a href="#" class="menu-link">contato</a></li>
-                    <li id="menu-5" class="menu-item"><a href="#" class="menu-link">orçamento</a></li>
+                    <li id="menu-2" class="menu-item"><a href="#conhecimentos" class="menu-link">conhecimentos</a></li>
+                    <li id="menu-3" class="menu-item"><a href="#projetos" class="menu-link">projetos</a></li>
+                    <li id="menu-4" class="menu-item"><a href="#contato" class="menu-link">contato</a></li>
+                    <li id="menu-5" class="menu-item"><a href="#orcamento" class="menu-link">orçamento</a></li>
                     
                     
                 </ul>
@@ -57,8 +57,8 @@
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos" data-anime="up">
-            <div class="sessao-header">
+        <section class="sessao-conhecimentos" >
+            <div class="sessao-header"id="conhecimentos">
                 <h1 class="title-style">Conhecimentos</h1>
             </div>
             <div class="conhecimentos">
@@ -120,7 +120,7 @@
                     <i class="fa-solid fa-laptop-code"></i>                
                 </div>
         </section>
-        <section class="sessao-projetos" >
+        <section class="sessao-projetos" id="projetos" >
             <div class="projetos-header">
                 <h1>Projetos</h1>
             </div>
@@ -181,7 +181,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="contato">
             <div class="contact-wrapper" data-anime="up">
                 <div class="contact-left"></div>
                 <div class="contact-right">
@@ -192,7 +192,7 @@
                             <label  for="nome" class="field-label">Nome</label>
                         </div>
                         <div class="input-group">
-                            <input id="email" type="text" class="field">
+                            <input id="email" type="email" class="field">
                             <label for="email" class="field-label">E-mail</label>
                         </div>
                         <div class="input-group">
