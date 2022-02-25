@@ -1,7 +1,9 @@
 
-//animação hamburguer
-document.querySelector(".hamburguer").addEventListener("click", () =>{
-    document.querySelector(".container").classList.toggle("show-menu")
+//animação sidebar
+document.querySelectorAll("#Close-menu").forEach(function(element) {
+    element.addEventListener("click", () =>{
+        document.querySelector(".container").classList.toggle("show-menu")
+    })
 })
 
 
