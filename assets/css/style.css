@@ -933,7 +933,7 @@ footer {
 }
 .footer-social {
     display:flex;
-    padding:5px;
+    padding:8px;
 }
 .footer-social a {
     display:block;
@@ -956,7 +956,7 @@ footer {
     color:#999;
     line-height:20px;
     font-size:13px;
-    padding:0 10px 10px 10px;
+    padding:8px;
 }
 .footer--item.area3 form {
     background-color:#333;
