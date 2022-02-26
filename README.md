@@ -1,5 +1,6 @@
-# portfólio
-portfolio experimental
+# Projeto: portfólio
+Projeto utilizando HTML, CSS e JS puro que visa uma pagina completa de portfólio pessoal.
+
 
 
 ## Tarefas
