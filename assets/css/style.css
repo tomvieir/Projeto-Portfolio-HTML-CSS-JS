@@ -29,14 +29,17 @@ html {
 }
 
 [data-anime="up"]{
+    opacity: 0;
     transform: translate3d(0px ,250px, 0px)
 }
 
 [data-anime="left"]{
-    transform: translateX(-50px)
+    opacity: 0;
+    transform: translate3d(10px ,0px, 0px)
 }
 [data-anime="right"]{
-    transform: translateX(50px)
+    opacity: 0;
+    transform: translate3d(-10px ,0px, 0px)
 }
 [data-anime].animate{
     opacity: 1;
