@@ -1,5 +1,5 @@
-# portfólio
-portfolio experimental
+# Projeto: Portfólio
+Projeto visando uma página completa de portfólio usando JS,HTML e CSS somente.
 
 
 ## Tarefas
