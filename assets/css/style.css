@@ -933,7 +933,6 @@ footer {
 }
 .footer-social {
     display:flex;
-    padding:8px;
 }
 .footer-social a {
     display:block;
