@@ -16,8 +16,6 @@
 <body>
     
     <div class="container">
-        
-        <div class="shadow"></div>
 
         <div class="hamburguer" id="Close-menu">
             <div class="line" id="line1"></div>
@@ -62,7 +60,7 @@
                 <h1 class="title-style">Conhecimentos</h1>
             </div>
             <div class="conhecimentos">
-                <div class="conhecimento">
+                <div class="conhecimento" data-anime="left">
                     <div class="conhecimento-header">
                         <i class="fab fa-html5"></i>
                         <h3>HTML</h3>
@@ -71,7 +69,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quae eligendi molestiae corrupti.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento" data-anime="right">
                     <div class="conhecimento-header">
                         <i class="fab fa-css3-alt"></i>
                         <h3>Css</h3>
@@ -80,7 +78,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consectetur.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento" data-anime="left">
                     <div class="conhecimento-header">
                         <i class="fab fa-js"></i>
                         <h3>Javascript</h3>
@@ -89,7 +87,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores placeat non odit.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento" data-anime="right">
                     <div class="conhecimento-header">
                         <i class="fab fa-react"></i>
                         <h3>ReactJS</h3>
@@ -98,7 +96,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum unde itaque.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento" data-anime="left">
                     <div class="conhecimento-header">
                         <i class="fab fa-github"></i>
                         <h3>Git e Github</h3>
@@ -107,7 +105,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis!</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento" data-anime="right">
                     <div class="conhecimento-header">
                         <i class="fab fa-python"></i>
                         <h3>Python</h3>
@@ -134,7 +132,7 @@
                             <h2>projeto1</h2>
                             <h3>HTML, CSS</h3>
                             <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, doloremque maiores. Sequi quam, sit sapiente amet debitis. </P>
-                            <button>Saiba mais</button>
+                            <button class="ButtonSend">Saiba mais</button>
                         </div>
                     </div>
                 </div>
@@ -147,7 +145,7 @@
                             <h2>projeto2</h2>
                             <h3>HTML, CSS</h3>
                             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat necessitatibus. </P>
-                            <button>Saiba mais</button>
+                            <button class="ButtonSend">Saiba mais</button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +158,7 @@
                             <h2>projeto3</h2>
                             <h3>HTML, CSS</h3>
                             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis provident debitis. </P>
-                            <button>Saiba mais</button>
+                            <button class="ButtonSend">Saiba mais</button>
                         </div>
                     </div>
                 </div>
@@ -173,7 +171,7 @@
                             <h2>projeto4</h2>
                             <h3>HTML, CSS</h3>
                             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit voluptatibus facilis eaque, nulla officia placeat. </P>
-                            <button>Saiba mais</button>
+                            <button class="ButtonSend">Saiba mais</button>
                         </div>
                     </div>
                 </div>
@@ -181,12 +179,14 @@
             </div>
         </section>
 
+        
+
         <section class="section-contact" id="contato">
             <div class="contact-wrapper" data-anime="up">
                 <div class="contact-left"></div>
                 <div class="contact-right">
                     <h1>contato</h1>
-                    <form>
+                    <form class="form-contact">
                         <div class="input-group">
                             <input id="nome" type="text" class="field">
                             <label  for="nome" class="field-label">Nome</label>
@@ -207,7 +207,74 @@
         
 
 
+        <section class="section-budget" id="orcamento">
+            <div class="box"></div>
+            <div class="budget-wrapper">
+                <div class="header-budget" data-anime="left">
+                    <h1>Faça seu orçamento</h1>
+                </div>
+                
+                <form class="form-budget">
+                    
+                    <div class="qtde-page" data-anime="right" >
+                        <label for="qtde">Quantidade de páginas:</label> 
+                        <input type="number" name="qtde" id="qtde" min="1" max="100"> <br/><br/>
+                        <label for="js">Preciso de um script JS:</label>
+                        <input class="check" checked="" type="checkbox" name="js" id="js"> <br/><br/><br/> 
+                    </div>
+                    
+                    
+                    <div class="group-layout" data-anime="up">
+                        <label>Layout</label> 
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Sim, preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-não">Não preciso de um layout</label>
+                        </div><br/>
+                        
+                        <div>
+                            <label for="prazo">Prazo</label>
+                            <input type="range" name="prazo" id="prazo" min="1" max="10">
+                        </div>
+                        
+                        <div class="btn">
+                            <button type="submit" id="envio-form-orc" class="ButtonCustom">enviar</button>
+                        </div>
+                        
+                        <label id="preco"> R$ 0,00</label>
+                        
+                    </div>
+                     
+                </form>
+        </section> 
 
+        <footer>
+            <div class="footer--area">
+                <div class="footer--item area1">
+                    <div class="footer-social">
+                        <a href=""><img src="assets/images/twitter.png" /></a>
+                        <a href=""><img src="assets/images/linkedin.png" /></a>
+                        <a href=""><img src="assets/images/facebook.png" /></a>
+                        <a href=""><img src="assets/images/googleplus.png" /></a>
+                        <a href=""><img src="assets/images/pinterest.png" /></a>
+                    </div>
+                </div>
+                <div class="footer--item area2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros vitae erat condimentum viverra a nec lacus. Maecenas eros lectus, rhoncus vel dictum vel, dignissim eget ligula. Vestibulum id tempus quam, sed pellentesque quam. Vestibulum porta aliquet risus, ac rhoncus sem aliquet ac. Donec tincidunt cursus elit vitae euismod.
+                </div>
+                <div class="footer--item area3">
+                    <form method="POST" id="send-email">
+                        <input id="email" type="email" name="email" placeholder="EMAIL TO SUBSCRIBE" autocomplete="email" />
+                        <button class="button" form="send-email">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+            </div>
+        
 
 
 
