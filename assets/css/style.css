@@ -104,7 +104,7 @@ html {
 
 
 
-/* .ButtonCustom custom ===============================================*/
+/* .ButtonCustom custom */
 .ButtonCustom {
     padding: 1.3em 3em;
     font-family: var(--font-tertiary);
@@ -144,7 +144,7 @@ html {
 
 
 
-/* header ================================================== */
+/* header */
 
 header{
     width:100%;
@@ -178,7 +178,7 @@ header{
 
 .banner h1 {
     color: white;
-    font-size: 3.5rem;  /* não use pixel por questões de acessibilidade, use rem */
+    font-size: 3.5rem;  
     font-family: var(--font-tertiary);
     font-weight: 300;
     text-transform: uppercase;
@@ -498,7 +498,7 @@ header{
 
 
 
-/* projetos========================================================= */
+/* projetos========================================== */
 .sessao-projetos{
     width:100%;
     margin-bottom: 3rem;
